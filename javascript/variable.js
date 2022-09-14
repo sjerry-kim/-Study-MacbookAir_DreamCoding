@@ -36,7 +36,7 @@ const daysInWeek= 7;
 const maxNumber = 5;
 
 // Note!
-// Immutable data types: primitive types, frozen objecsts(i.e. object.freexe())
+// Immutable data types: primitive types, frozen objecsts(i.e. object.freeze())
 // Mutable data types: all objects by default are mutable in JS
 // favor immutable data type always for a few reasons:
 // - securtiy
@@ -75,7 +75,7 @@ const helloBob = `hi ${brendan}!`; // template literals (string)
 console.log(`value: ${helloBob}, type: ${typeof helloBob}`);
 
 // boolean
-// false: 0, null, undefined, NAN, ;;
+// false: 0, null, undefined, NAN, ""
 // true: any other value
 const canRead = true;
 const test = 3 < 1; // false
