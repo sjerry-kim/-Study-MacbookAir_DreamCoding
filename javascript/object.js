@@ -62,7 +62,7 @@ console.log(ellie.random); // undefined
 
 // 6. for..in vs for..of
 // for (key in obj) : 오브젝트에 사용
-console.clear(); // 이전의 것들이 지워짐(console was cleared)
+//console.clear(); // 이전의 것들이 지워짐(console was cleared)
 for (key in ellie){
     console.log(key);
 }
@@ -93,7 +93,7 @@ const user3 = {};
 for (key in user){
     user3[key] = user[key];
 }
-console.clear();
+//console.clear();
 console.log(user3);
 
 // new way
