@@ -49,3 +49,18 @@ function pickFruits(){
 }
 */
 pickFruits().then(console.log);
+
+// 3. useful Promise APIs
+// 병렬화
+function pickAllFruist(){
+  return Promise.all([getApple(),getBanana()]) 
+  .then(fruits => fruits.join(' + '));
+}
+pickAllFruist().then(console.log);
+
+// Promise 중에서 가장 먼저 값을 전달하는 것만 반환
+function pickOnlyOne(){
+  return Promise.race([getApple(),getBanana()]);
+}
+
+pickOnlyOne().then(console.log);
