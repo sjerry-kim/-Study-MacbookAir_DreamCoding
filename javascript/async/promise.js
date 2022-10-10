@@ -54,7 +54,7 @@ const getHen = () =>
   });
 const getEgg = hen =>
   new Promise((resolve,reject)=>{
-    setTimeout(()=> resolve(`${hen} => 🥚`),1000)
+    setTimeout(()=> reject(new Error(`error! ${hen} => 🥚`)),1000)
   });
 const cook = egg =>
   new Promise((resolve,reject)=>{
@@ -71,5 +71,10 @@ const cook = egg =>
 
   getHen()
   .then(getEgg)
+  .catch(error =>{
+    return '🍞'; 
+    // 에러 빵꾸처리 : 에러 난 곳에 바로 catch를 넣어주면, 달걀은 못 가져와도 완성 요리가 무사히 출력됨
+  })
   .then(cook)
-  .then(console.log);
+  .then(console.log)
+  .catch(console.log);
