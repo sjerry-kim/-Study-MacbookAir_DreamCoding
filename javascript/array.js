@@ -31,6 +31,8 @@ for(let fruit of fruits){
     console.log(fruit);
 }
 
+console.clear();
+
 // c. forEach
 // forEach(function(value, index, array){console.log(fruit, index,array)});
 fruits.forEach((fruit) => console.log(fruit)); 
@@ -75,7 +77,7 @@ const fruits2 = ['🍐', '🥥'];
 const newFruits = fruits.concat(fruits2);
 console.log(newFruits);
 
-console.clear();
+//console.clear();
 
 // 5. Searching
 // find the index
@@ -90,7 +92,7 @@ console.log(fruits.includes('🍉'));
 console.log(fruits.includes('🍓'));
 
 // lastIndexOf
-console.clear();
+// console.clear();
 fruits.push('🍏');
 console.log(fruits);
 console.log(fruits.indexOf('🍏')); // 동일한 값이 있을 때 가장 첫 번째 값의 인덱스를 출력
