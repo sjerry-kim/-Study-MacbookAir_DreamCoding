@@ -1,5 +1,3 @@
-'use strict';
-
 // Promise is a JavaScript object for asynchronous operation.
 // Promise는 JS 안에 내장되어있는 오브젝트이다.
 // 1. State (상태) : pending -> fulfilled or rejected
